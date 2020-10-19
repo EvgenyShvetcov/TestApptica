@@ -1,0 +1,7 @@
+export const GET_COUNTRIES = 'GET_COUNTRIES';
+export const GET_CATEGORIES = 'GET_CATEGORIES';
+export const GET_SCHEDULE_DATA = 'GET_SCHEDULE_DATA';
+
+export const SELECT_COUNTRY = 'SELECT_COUNTRY';
+
+export const THIS_DATA = 'THIS_DATA'

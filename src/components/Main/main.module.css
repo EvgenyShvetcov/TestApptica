@@ -1,0 +1,16 @@
+.h1{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.container{
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(253, 230, 230);
+}
