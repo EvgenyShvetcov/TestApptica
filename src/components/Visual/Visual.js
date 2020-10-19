@@ -36,7 +36,7 @@ export const Visual = () => {
         const comparedCountry = contries?.data.filter(el => el.country === selectedContry ? el.id : null)
 
         // const days = data ? Object.keys(data?.data[2][3]) : null;
-        console.log('второй')
+        console.log('второй ')
         if (comparedCountry) {
             
             // dispatch(getStatistics(a[0], days[0], days[days.length - 1]))
