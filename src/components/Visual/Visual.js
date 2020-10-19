@@ -23,7 +23,7 @@ export const Visual = () => {
     const selectedContry = useSelector(state => state.selectedCountry)
     const contries = useSelector(state => state.contries[0])
     const dataNow = useSelector(state => state.currentData[0])
-    
+
     const [checkboxes, setCheckboxes] = useCheckbox({ checkbox: true, checkbox2: true, checkbox3: true, checkbox4: true, checkbox5: true, checkbox6: true })
     const [schedules, setSchedules] = useState([])
     useEffect(() => {
@@ -31,16 +31,16 @@ export const Visual = () => {
         dispatch(getCountries())
         dispatch(getCatigories())
     }, []);
-    
+
     useEffect(() => {
         const comparedCountry = contries?.data.filter(el => el.country === selectedContry ? el.id : null)
 
         // const days = data ? Object.keys(data?.data[2][3]) : null;
         console.log('второй ')
         if (comparedCountry) {
-            
+
             // dispatch(getStatistics(a[0], days[0], days[days.length - 1]))
-          dispatch(getStatistics(comparedCountry[0], '2020-09-22', '2020-10-14'))
+            dispatch(getStatistics(comparedCountry[0], '2020-09-22', '2020-10-14'))
         }
         setpercentage(80);
 
@@ -101,9 +101,6 @@ export const Visual = () => {
             setChart({
                 labels: datas,
                 datasets: schedules,
-                options: {
-                    responsive: false,
-                }
             })
         }
 
@@ -118,7 +115,7 @@ export const Visual = () => {
     return (
         <div className={style.all}>
             <ScheduleNav />
-            <Line className={style.main} data={chart} options={chart.options}>
+            <Line className={style.main} data={chart} width={600} height={800}>
             </Line>
 
             <div className={style.checkboxAll}>

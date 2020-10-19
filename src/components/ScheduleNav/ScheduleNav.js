@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import style from './nav.module.css'
 import { useSelector, useDispatch } from 'react-redux';
 import { selectCountry } from '../../redux/actionCreator'
-import { getCatigories, getCountries, getScheduleData } from '../../redux/actionCreator';
+
 
 
 export const ScheduleNav = () => {
